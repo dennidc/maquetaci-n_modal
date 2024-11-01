@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/2ebd543e82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/movil.css">
+    <title>Tarea 4</title>
+</head>
+<body>
+    <header>
+        <img src="CSS/imagenes/logo.jpg" alt="logo">
+    </header>
+    <section class="principal">
+        <div class="seccion1">
+            <p class="our">Our Team</p>
+            <h1>A Dedicates Team of Experts</h1>
+            <h3>Passion, experience and a fierce commitment to education are the cornerstones of our success in the beauty industry</h3>
+            <p>We believe thath being the largest SPA in the area is not enough in itsel to satisfy the needs of our customers. For this reason we have build us a staff of specialized professionals who are proud to welcome you to our hotel, present What We Do, listen to your needs and guarantee well-being and relaxation during your stay our SPA Resort</p>
+            <p>Everyone in pur team is certified specialist capable of delivering a unique service of high quality you won´t find anywhere else in modern spa and resort industry.</p>
+            <div class="btn">
+                <a class="btn1" href="#">LEARN MORE</a>
+                <a class="btn2" href="#">VIEW ALL TEAM</a>
+
+            </div>
+        </div>
+        <div class="seccion2">
+            <figure>
+                <img src="CSS/imagenes/foto1.jpg" alt="persona 1">
+                <h3>Jessica Cooper</h3>
+                <p>Esthetician</p>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+                <a id="boton_modal" class="btn-get" href="#">GET IN TOUCH</a>
+            </figure>
+            <figure>
+                <img src="CSS/imagenes/foto2.jpg" alt="persona 2">
+                <h3>Robert Wagner</h3>
+                <p>Hairdresser</p>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+                <a id="boton_modal2" class="btn-get" href="#">GET IN TOUCH</a>
+            </figure>
+
+        </div>
+    </section>
+
+    <section id="modal" class="fondomodal">
+        <div class="contenidomodal">
+          <div class="alineacion_cerrar">
+            <i id="cerrar_modal" class="cerrarmodal fas fa-times-square"></i>
+        </div>
+          <br><br>
+          <article class="contacto">
+            <h2>Contact Us</h2>
+            <br>
+            <p>
+              If you have any questions concerning our services, please fill out the contact from below.
+            </p>
+            <form action="#">
+                <input placeholder="Name*" type="text" id="nombre" name="nombre" required><br><br>
+                <input placeholder="E-mail*" type="email" id="email" name="email" required><br><br>
+                <textarea placeholder="Message*" id="mensaje" name="mensaje" required></textarea><br><br>
+                <a class="btn-get" href="#">Submit</a>
+            </form>
+        </div>
+      </section>
+    <footer class="pie"></footer>
+
+    <script>
+
+        $("#boton_modal,#boton_modal2").click(function () {
+          $("#modal").addClass("mostrar");
+        })
+
+        $("#cerrar_modal").click(function () {
+          $("#modal").removeClass("mostrar");
+        })
+
+        // click por fuera
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            $("#modal").removeClass("mostrar");
+          }
+        };
+
+        // click tecla ESC
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') {
+            $("#modal").removeClass("mostrar");
+          }
+        });
+        function tiempo() {
+      $("#modal").addClass("mostrar");
+    }
+    setTimeout(tiempo, 5000);
+
+      </script>
+</body>
+</html>

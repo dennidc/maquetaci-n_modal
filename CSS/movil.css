@@ -1,0 +1,168 @@
+@media (max-width: 480px) {
+    .principal {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .seccion1,
+    .seccion2 {
+        max-width: 100%;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .seccion1 h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .seccion1 p {
+        font-size: 14px;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn a {
+        padding: 10px 20px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .seccion2 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    figure h3 {
+        font-size: 18px;
+    }
+
+    .redes {
+        gap: 10px;
+    }
+
+    .pie {
+        height: 40px;
+    }
+
+    .contenidomodal {
+        max-width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .contacto {
+        padding: 10px;
+    }
+
+    .contacto p {
+        font-size: 14px;
+    }
+
+    .btn-get {
+        width: 30%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .pie{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .seccion1,
+    .seccion2 {
+        max-width: 100%;
+        padding: 40px;
+        margin: 0;
+    }
+
+    .seccion1 h1 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .seccion1 p {
+        font-size: 15px;
+    }
+
+    .btn {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .btn a {
+        padding: 10px 40px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .seccion2 {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    figure img {
+        width: 120px;
+        height: 120px;
+    }
+
+    figure h3 {
+        font-size: 18px;
+    }
+
+    .redes {
+        gap: 15px;
+    }
+
+    .pie {
+        height: 45px;
+    }
+
+    .contenidomodal {
+        max-width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contacto {
+        padding: 20px;
+    }
+
+    .contacto p {
+        font-size: 15px;
+    }
+
+    .btn-get {
+        width: 30%;
+        padding: 10px;
+        text-align: center;
+    }
+    .pie{
+        margin-top: 50px;
+    }
+}
